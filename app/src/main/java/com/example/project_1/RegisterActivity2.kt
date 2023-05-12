@@ -15,13 +15,15 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+private lateinit var etUsername: EditText;
+private lateinit var etPassword: EditText;
+private lateinit var etButton: Button;
+
+private lateinit var userName: String
+private lateinit var password: String
+
 
 class RegisterActivity2 : AppCompatActivity() {
-
-    lateinit var etUsername: EditText;
-    lateinit var etPassword: EditText;
-    lateinit var etButton: Button;
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         //var register = findViewById(R.id.btnRegister) as Button
@@ -78,9 +80,6 @@ class RegisterActivity2 : AppCompatActivity() {
                     Toast.makeText(this@RegisterActivity2, "User already exists!", Toast.LENGTH_LONG)
                         .show()
                 }
-
-
-
 
             }
 
