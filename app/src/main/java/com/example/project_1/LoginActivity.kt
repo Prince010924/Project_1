@@ -19,7 +19,7 @@ private lateinit var etButton: Button;
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_login)
         etUsername = findViewById<EditText>(R.id.etUserName)
         etPassword = findViewById<EditText>(R.id.etPassword)
         etButton = findViewById<Button>(R.id.btnLogin)

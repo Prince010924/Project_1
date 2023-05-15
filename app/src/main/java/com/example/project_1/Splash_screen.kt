@@ -22,8 +22,8 @@ class Splash_screen : AppCompatActivity() {
         )
 
         val backgroundImage: ImageView = findViewById(R.id.SplashScreenImage)
-        val slideAnimation = AnimationUtils.loadAnimation(this, R.anim.side_slide)
-        backgroundImage.startAnimation(slideAnimation)
+        val rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate)
+        backgroundImage.startAnimation(rotateAnimation)
 
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
