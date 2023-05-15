@@ -59,6 +59,8 @@ class LoginActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
                 if (s == userName) {
+                    val intent = Intent(this@LoginActivity,DashboardActivity2::class.java)
+                    intent.putExtra("Username",s)
                     Toast.makeText(
                         this@LoginActivity,
                         "Successfully login",
